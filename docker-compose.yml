@@ -1,0 +1,12 @@
+version: '3'
+services:
+  search:
+    build:
+      context: ./search
+      dockerfile: Dockerfile
+    volumes:
+      - ./search:/app
+    ports:
+      - "8000:8000"
+volumes:
+  dbdata:

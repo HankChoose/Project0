@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Search</title>
+        <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+        <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
+        <script src="../static/js/bootstrap.min.js"></script>
+    </head>
+
+
+    <body class="text-center">
+      <br>
+      <div style="text-align: right;">
+        <a href="{% url 'index_view' %}">Google Search</a>
+        <a href="../static/images.html">Images</a>
+        <a href="../static/advanced.html">Advanced Search</a>
+      </div>
+      <label>
+        <br><br><br><br><br>
+      </label>
+      <img class="mb-4" src="../static/images/google-logo.png" alt="" width="280" height="95">
+      <br>
+      <form action="https://www.google.com/search">
+        <div class="col-6 offset-md-3">
+          <!-- placeholder="Search" -->
+          <input type="text" name="q" class="form-control my-input">
+        </div>
+        <br>
+        <input type="submit" value="Google Search" class="btn btn-lg btn-light">
+        <a href="https://www.google.com/doodles/" class="btn btn-lg btn-light">I'm Feeling Lucky</a>
+      </form>
+
+    
+    </body>
+</html>
